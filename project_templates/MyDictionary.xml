@@ -10,13 +10,13 @@
 		<p>
 			An application to look up dictionary on Mac OS X.<br />
 		</p>
-		<lifuheng class="column">
+		<span class="column">
 			The Dictionary application first appeared in Tiger.
-		</lifuheng>
-		<lifuheng class="picture">
+		</span>
+		<span class="picture">
 			It's application icon looks like below.<br />
 			<img src="Images/_internal_dictionary.png" alt="Dictionary.app Icon" />
-		</lifuheng>
+		</span>
 	</d:entry>
 	<d:entry id="make_1" d:title="make">
 		<d:index d:value="make" />
@@ -27,23 +27,23 @@
 		<div d:priority="2">
 			<h1>make</h1>
 		</div>
-		<lifuheng class="syntax">
-			<lifuheng d:pr="US">| māk |</lifuheng>
-			<lifuheng d:pr="US_IPA">| meɪk |</lifuheng>
-			<lifuheng d:pr="UK_IPA">| meɪk |</lifuheng>
-		</lifuheng>
+		<span class="syntax">
+			<span d:pr="US">| māk |</span>
+			<span d:pr="US_IPA">| meɪk |</span>
+			<span d:pr="UK_IPA">| meɪk |</span>
+		</span>
 		<div>
 			<ol>
 				<li>
 					Form by putting parts together or combining substances; construct; create; produce
-					<lifuheng d:priority="2"> : <i>Mother made her a beautiful dress</i>
-					</lifuheng>
+					<span d:priority="2"> : <i>Mother made her a beautiful dress</i>
+					</span>
 					.
 				</li>
 				<li>
 					Cause to be or become
-					<lifuheng d:priority="2"> : <i>The news made me happy</i>
-					</lifuheng>
+					<span d:priority="2"> : <i>The news made me happy</i>
+					</span>
 					.
 				</li>
 			</ol>
@@ -97,7 +97,9 @@
 		<link href="x-dictionary:d:LM5style_show.css" rel="stylesheet" type="text/css" />
 		<script src="jquery-3.2.1.min.js" charset="utf-8" type="text/javascript"></script>
 		<script src="LM5Switch.js" charset="utf-8" type="text/javascript"></script>
-		<script src="LM5pp_config.ini" charset="utf-8" type="text/javascript"></script><span class="lm5ppbody">
+		<script src="LM5pp_config.ini" charset="utf-8" type="text/javascript"></script>
+
+		<span class="lm5ppbody">
 			<div class="entry_content">
 				<h1 class="pagetitle" pagetype="3">101</h1>
 				<div class="dictionary">
@@ -111,11 +113,35 @@
 										class="cn_title"></span></span></span></div><span class="dictlink"><a
 								name="101__entry_0__a"></a>
 							<div class="ldoceEntry Entry" id="101__entry_0" new="OnlineUpd06" sortname="oneone"><span
-									class="Head"><span class="HWD">101</span><a class="PronCodes"
-										href="x-dictionary:d:sound://media/english/ameProns/ld5_101.mp3"><span
-											class="neutral span"> /</span><span class="PRON">ˌwʌn əʊ ˈwʌn</span><span
-											class="AMEVARPRON"><span class="neutral span"> $ </span>-oʊ-</span><span
-											class="neutral span">/</span></a><span class="lm5pp_POS"> number</span><a
+									class="Head"><span class="HWD">101</span>
+									
+
+
+
+
+
+
+
+									<a class="PronCodes" 
+										href="x-dictionary:d:sound://media/english/ameProns/ld5_101.mp3" 
+										onshow="document.getElementById('1').play(); return false;">
+										<span class="neutral span"> /</span>
+										<span class="PRON">ˌwʌn əʊ ˈwʌn</span>
+										<span class="AMEVARPRON"><span class="neutral span"> $ </span>-oʊ-</span>
+										<span class="neutral span">/</span>
+										
+									</a>
+									<audio id="1" src="media/english/ameProns/ld5_101.mp3"/>
+
+
+
+
+
+
+
+
+
+											<span class="lm5pp_POS"> number</span><a
 										class="speaker brefile fa fa-volume-up"
 										data-src-mp3="/media/english/breProns/ld5_101.mp3"
 										href="x-dictionary:d:sound://media/english/breProns/ld5_101.mp3"
@@ -167,5 +193,10 @@
 				</div>
 			</div>
 		</span>
+		<script>
+			setTimeout(function () {
+				document.getElementById('1').play();
+			}, 1000)
+		</script>
 	</d:entry>
 </d:dictionary>
